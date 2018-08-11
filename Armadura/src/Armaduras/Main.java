@@ -1,14 +1,29 @@
 package Armaduras;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
-		Armadura armadura = new Armadura();
-		armadura.setNome("Mark");
-		armadura.setCor("red");
-		armadura.setQuantidadeArmas(20);
+		String nome;
+		String cor;
+		int armas;
 		
-		System.out.println(armadura.getNome());
+		Scanner lerDaTela = new Scanner(System.in);
+		
+		System.out.println("|-----------------------------------------------------------|");
+		System.out.println("|Digite o nome que deseja dar a sua armadura:");
+		nome = lerDaTela.next();
+		System.out.println("|-----------------------------------------------------------|");
+		System.out.println("|Digite a cor que deseja dar a sua armadura:");
+		cor = lerDaTela.next();
+		System.out.println("|-----------------------------------------------------------|");
+		System.out.println("|Digite a quantidade de armas que deseja dar a sua armadura:");
+		armas = lerDaTela.nextInt();
+		
+		CriarArmadura novaArmadura = new CriarArmadura();
+		
+		novaArmadura.criarArmadura(nome, cor, armas);
 		
 		
 	}
