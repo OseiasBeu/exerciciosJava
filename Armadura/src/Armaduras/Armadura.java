@@ -10,20 +10,20 @@ public class Armadura {
 	public String getCor() {
 		return cor;
 	}
-	public void setCor(String cor) {
-		this.cor = cor;
+	public String setCor(String cor) {
+		return this.cor = cor;
 	}
 	public String getNome() {
 		return nome;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public String setNome(String nome) {
+		return this.nome = nome;
 	}
 	public int getQuantidadeArmas() {
 		return quantidadeArmas;
 	}
-	public void setQuantidadeArmas(int quantidadeArmas) {
-		this.quantidadeArmas = quantidadeArmas;
+	public int setQuantidadeArmas(int quantidadeArmas) {
+		return this.quantidadeArmas = quantidadeArmas;
 	}
 
 	
